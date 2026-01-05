@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas - Az Zurra Rizkya Anandita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="alert('Selamat Datang di Kelas Desain Web Lanjutan')"></body>
+  <header>
+    <h1>PSIKOLOGI 🕊️</h1>
+    <nav>
+    <nav class="nav-links" id="navLinks">
+            <a href="">Home</a>
+            <div class="dropdown">
+            <button class="dropbtn" aria-expanded="false" aria-controls="about-menu">About</button>
+            <div class="dropdown-content" id="about-menu">
+                <a href="">Profil</a>
+                <a href="">Our Team</a>
+            </div>
+            </div>
+            <a href="">Community</a>
+            <a href="">Project</a>
+            <a href="">Contact</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Tombol Dark dan Light">🌙</button>
+        </nav>
+        <button class="burger" id="burgerBtn" aria-label="Tombol Menu Mobile">☰</button>
+  </header>
+
+  <main>
+    <!-- Profil -->
+    <section class="profil-container">
+      <div class="foto-profil">
+        <img src="https://i.pinimg.com/474x/53/2a/00/532a008c33c23137ed796b9e3d01459b.jpg" alt="Foto Profil">
+      </div>
+      <div class="teks-profil">
+        <h1>Az Zurra Rizkya Anandita 👩🏼‍💻</h1>
+        <h2>Desain Web Lanjutan 🖥️</h2>
+        <h3>Sistem Informasi 3A</h3>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://bungram.web.id/wp-content/uploads/2024/09/Sejarah-Psikologi.jpg" alt="Gambar Psikologi">
+      </div>
+      <div class="hero-text">
+        <h2>Psikologi Perkembangan 🧬</h2>
+        <p>
+          Psikologi Perkembangan adalah cabang dari ilmu psikologi yang secara sistematis mempelajari perubahan
+          dan kestabilan perilaku, kemampuan mental, emosi, serta aspek sosial manusia sepanjang rentang kehidupan,
+          mulai dari masa prenatal hingga usia lanjut.
+        </p>
+      </div>
+    </section>
+
+    <!-- Grid Gallery -->
+    <section class="grid-gallery">
+      <div class="card">🧠 Brain</div>
+      <div class="card">❤️ Love</div>
+      <div class="card">💭 Thought Balloon</div>
+      <div class="card">🤝🏻 Handshake</div>
+      <div class="card">🗣️ Speaking Head</div>
+      <div class="card">👥 Two Heads</div>
+    </section>
+
+    <!-- Video & Audio Grid -->
+    <section class="video-gallery">
+      <div class="card video-thumbnail" data-src="https://www.youtube.com/embed/j9vqa4K4h90?start=4">
+        <img src="https://img.youtube.com/vi/j9vqa4K4h90/mqdefault.jpg"
+             alt="Video Thumbnail Aroma" 
+             class="thumbnail-image">
+        <div class="play-overlay">▶️</div>
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      
+      <div class="card video-thumbnail" data-src="https://www.youtube.com/embed/yxQZk_IRiRs">
+        <img src="https://img.youtube.com/vi/yxQZk_IRiRs/mqdefault.jpg" 
+             alt="Video Thumbnail Layers" 
+             class="thumbnail-image">
+        <div class="play-overlay">▶️</div>
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      
+      <div class="card video-thumbnail" data-src="https://www.youtube.com/embed/0OfUkZWPIY0">
+        <img src="https://img.youtube.com/vi/0OfUkZWPIY0/mqdefault.jpg" 
+             alt="Video Thumbnail Coffe" 
+             class="thumbnail-image">
+        <div class="play-overlay">▶️</div>
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+      </div>        
+    </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <div class="footer-top">
+      <div class="sosial">
+        <h3>Sosial Media</h3>
+        <div class="bulat-container">
+          <div class="bulat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');"></div>
+          <div class="bulat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png');"></div>
+          <div class="bulat" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png');"></div>
+        </div>
+      </div>
+
+      <div class="kontak">
+        <h3>Kontak</h3>
+        <p>📞 Whatsapp: 0852 9084 2414</p>
+        <p>💌 Email: azzurrasiregar@gmail.com</p>
+        <p>🏡 Alamat: Jl. Seriti II, Kec. Kisaran Timur</p>
+      </div>
+    </div>
+
+ <div id="modal-alert" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <p>🌸 Welcome To Psikologi</p>
+        <button id="tombol-tutup">Tutup</button>
+      </div>
+    </div>
+
+    <div id="video-modal" class="modal-backdrop hidden">
+      <div class="video-modal-content">
+        <button id="close-video" class="tombol-close">✖</button> 
+        <iframe id="video-frame" src="" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Universitas Royal - DWL3A</p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
